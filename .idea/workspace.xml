@@ -10,7 +10,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ParkingPlann$test_reeds_shepp.coverage" NAME="test_reeds_shepp Coverage Results" MODIFIED="1532683033931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BasicCurve" />
+    <SUITE FILE_PATH="coverage/ParkingPlann$test_reeds_shepp.coverage" NAME="test_reeds_shepp Coverage Results" MODIFIED="1532776813287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BasicCurve" />
+    <SUITE FILE_PATH="coverage/ParkingPlann$test_knn.coverage" NAME="test_kdtree Coverage Results" MODIFIED="1532776867448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KDtreeKnn" />
     <SUITE FILE_PATH="coverage/AutonomousParking$knn_example.coverage" NAME="knn_example Coverage Results" MODIFIED="1532681382599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KDtreeKnn" />
     <SUITE FILE_PATH="coverage/ParkingPlann$knn_example.coverage" NAME="knn_example Coverage Results" MODIFIED="1532682991902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/KDtreeKnn" />
     <SUITE FILE_PATH="coverage/AutonomousParking$test_reeds_shepp.coverage" NAME="test_reeds_shepp Coverage Results" MODIFIED="1532681166644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BasicCurve" />
@@ -19,54 +20,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="a_star.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicCurve/a_star.py">
+      <file leaf-file-name="kdtree.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/KDtreeKnn/kdtree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1127">
-              <caret line="206" column="66" lean-forward="false" selection-start-line="206" selection-start-column="12" selection-end-line="206" selection-end-column="66" />
+            <state relative-caret-position="-230">
+              <caret line="122" column="11" lean-forward="true" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
               <folding>
-                <element signature="e#0#27#0" expanded="true" />
-                <element signature="e#190#315#0" expanded="false" />
-                <element signature="e#236#315#0" expanded="false" />
-                <element signature="e#370#2138#0" expanded="false" />
-                <element signature="e#370#575#1" expanded="false" />
-                <element signature="e#1058#2065#0" expanded="false" />
-                <element signature="e#1298#2065#0" expanded="false" />
-                <element signature="e#1721#1921#0" expanded="false" />
-                <element signature="e#1777#1921#0" expanded="false" />
-                <element signature="e#1974#2065#0" expanded="false" />
-                <element signature="e#2194#2316#0" expanded="false" />
-                <element signature="e#2378#4601#0" expanded="false" />
-                <element signature="e#2378#2615#1" expanded="false" />
-                <element signature="e#3177#4508#0" expanded="false" />
-                <element signature="e#3208#3253#0" expanded="false" />
-                <element signature="e#3397#3469#0" expanded="false" />
-                <element signature="e#3613#4508#0" expanded="false" />
-                <element signature="e#4037#4237#0" expanded="false" />
-                <element signature="e#4093#4237#0" expanded="false" />
-                <element signature="e#4291#4508#0" expanded="false" />
-                <element signature="e#4659#4961#0" expanded="false" />
-                <element signature="e#4993#5042#0" expanded="false" />
-                <element signature="e#5073#5234#0" expanded="false" />
-                <element signature="e#6073#6439#0" expanded="false" />
-                <element signature="e#6171#6326#0" expanded="false" />
-                <element signature="e#6488#6535#0" expanded="false" />
-                <element signature="e#6581#6782#0" expanded="false" />
-                <element signature="e#6646#6765#0" expanded="false" />
-                <element signature="e#6731#6765#0" expanded="false" />
-                <element signature="e#6801#6825#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_reeds_shepp.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicCurve/test_reeds_shepp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1702">
-              <caret line="188" column="34" lean-forward="false" selection-start-line="164" selection-start-column="4" selection-end-line="188" selection-end-column="34" />
-              <folding>
-                <element signature="e#78#121#0" expanded="false" />
+                <element signature="e#90#127#0" expanded="true" />
+                <element signature="e#525#981#0" expanded="false" />
+                <element signature="e#662#960#0" expanded="false" />
+                <element signature="e#713#919#0" expanded="false" />
+                <element signature="e#730#843#0" expanded="false" />
+                <element signature="e#1851#2047#0" expanded="false" />
+                <element signature="e#1851#1968#1" expanded="false" />
+                <element signature="e#2460#2496#0" expanded="false" />
+                <element signature="e#2900#3119#0" expanded="false" />
+                <element signature="e#3165#3439#0" expanded="false" />
+                <element signature="e#3165#3352#1" expanded="false" />
+                <element signature="e#3400#3439#0" expanded="false" />
+                <element signature="e#3832#3883#0" expanded="false" />
+                <element signature="e#4067#4261#0" expanded="false" />
+                <element signature="e#4112#4196#0" expanded="false" />
+                <element signature="e#4296#4494#0" expanded="false" />
+                <element signature="e#4342#4428#0" expanded="false" />
+                <element signature="e#4558#4771#0" expanded="false" />
+                <element signature="e#4823#4991#0" expanded="false" />
+                <element signature="e#5059#6268#0" expanded="false" />
+                <element signature="e#5059#5385#1" expanded="false" />
+                <element signature="e#6021#6092#0" expanded="false" />
+                <element signature="e#6174#6248#0" expanded="false" />
+                <element signature="e#6328#6869#0" expanded="false" />
+                <element signature="e#6328#6630#1" expanded="false" />
+                <element signature="e#6924#7642#0" expanded="false" />
+                <element signature="e#6924#7121#1" expanded="false" />
+                <element signature="e#7700#8589#0" expanded="false" />
+                <element signature="e#7771#7811#0" expanded="false" />
+                <element signature="e#7821#7861#0" expanded="false" />
+                <element signature="e#8410#8518#0" expanded="false" />
+                <element signature="e#8872#8978#1" expanded="false" />
+                <element signature="e#9147#9484#1" expanded="false" />
+                <element signature="e#9882#9952#0" expanded="false" />
+                <element signature="e#11004#11069#0" expanded="false" />
+                <element signature="e#11376#11440#0" expanded="false" />
+                <element signature="e#11912#11973#0" expanded="false" />
+                <element signature="e#12399#12942#1" expanded="false" />
+                <element signature="e#13939#13967#0" expanded="false" />
+                <element signature="e#14001#14133#0" expanded="false" />
+                <element signature="e#14200#14323#0" expanded="false" />
+                <element signature="e#14357#14372#0" expanded="false" />
+                <element signature="e#14451#14998#1" expanded="false" />
+                <element signature="e#16000#16278#0" expanded="false" />
+                <element signature="e#16327#16789#0" expanded="false" />
+                <element signature="e#16327#16512#1" expanded="false" />
+                <element signature="e#16570#16789#0" expanded="false" />
+                <element signature="e#16863#17554#0" expanded="false" />
+                <element signature="e#17089#17529#0" expanded="false" />
+                <element signature="e#17119#17193#0" expanded="false" />
+                <element signature="e#17421#17483#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -75,20 +85,42 @@
       <file leaf-file-name="examples.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KDtreeKnn/examples.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1242">
-              <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="28" />
+            <state relative-caret-position="358">
+              <caret line="34" column="40" lean-forward="false" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="anothertest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="anothertest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KDtreeKnn/anothertest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="460">
+              <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Distance.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KDtreeKnn/Distance.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="16" column="74" lean-forward="false" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collision_check.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BasicCurve/collision_check.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,6 +146,7 @@
       <find>search_knn</find>
       <find>full</find>
       <find>search_min_cost_node</find>
+      <find>search_</find>
     </findStrings>
     <replaceStrings>
       <replace>math.radians</replace>
@@ -138,9 +171,11 @@
         <option value="$PROJECT_DIR$/python-KNN-master/kdtree.py" />
         <option value="$PROJECT_DIR$/python-KNN-master/Distance.py" />
         <option value="$PROJECT_DIR$/BasicCurve/test_reeds_shepp.py" />
+        <option value="$PROJECT_DIR$/KDtreeKnn/anothertest.py" />
+        <option value="$PROJECT_DIR$/BasicCurve/collision_check.py" />
+        <option value="$PROJECT_DIR$/KDtreeKnn/Distance.py" />
         <option value="$PROJECT_DIR$/BasicCurve/a_star.py" />
         <option value="$PROJECT_DIR$/KDtreeKnn/examples.py" />
-        <option value="$PROJECT_DIR$/KDtreeKnn/anothertest.py" />
       </list>
     </option>
   </component>
@@ -150,7 +185,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -203,6 +238,16 @@
               <item name="ParkingPlann" type="cbb8eebc:String" user="ParkingPlann" />
               <item name="BasicCurve" type="cbb8eebc:String" user="BasicCurve" />
             </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ParkingPlann" type="cbb8eebc:String" user="ParkingPlann" />
+              <item name="KDtreeKnn" type="cbb8eebc:String" user="KDtreeKnn" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ParkingPlann" type="cbb8eebc:String" user="ParkingPlann" />
+              <item name="test" type="cbb8eebc:String" user="test" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -234,7 +279,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_reeds_shepp">
+  <component name="RunManager" selected="Python.test_kdtree">
     <configuration name="TestLeetCode" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -254,7 +299,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="knn_example" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="test_kdtree" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -313,9 +358,9 @@
     </configuration>
     <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.TestLeetCode" />
-      <item index="1" class="java.lang.String" itemvalue="Python.knn_example" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test_math" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test_reeds_shepp" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test_math" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test_reeds_shepp" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test_kdtree" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -344,16 +389,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.49562362" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31447226" sideWeight="0.5063966" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1761488" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="434" height="856" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20565833" sideWeight="0.50959486" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1761488" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="434" height="856" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.49124727" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20565833" sideWeight="0.49124727" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31758243" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2078346" sideWeight="0.4904051" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3188248" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50547045" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24626866" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14605543" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -367,6 +412,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,10 +434,19 @@
           <line>381</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/KDtreeKnn/kdtree.py</url>
+          <line>375</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="32" />
+      <option name="time" value="35" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="nodeDist" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
@@ -403,23 +458,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BasicCurve/test_reeds_shepp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="89" column="24" lean-forward="false" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
-          <folding>
-            <element signature="e#78#121#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BasicCurve/reeds_shepp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BasicCurve/a_star.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -622,13 +660,6 @@
     <entry file="file://$PROJECT_DIR$/python-KNN-master/kdtree.py" />
     <entry file="file://$PROJECT_DIR$/python-KNN-master/Distance.py" />
     <entry file="file://$PROJECT_DIR$/python-KNN-master/examples.py" />
-    <entry file="file://$PROJECT_DIR$/KDtreeKnn/kdtree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1859">
-          <caret line="364" column="69" lean-forward="false" selection-start-line="364" selection-start-column="69" selection-end-line="364" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/leettest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
@@ -638,7 +669,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BasicCurve/test_reeds_shepp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1702">
+        <state relative-caret-position="532">
           <caret line="188" column="34" lean-forward="false" selection-start-line="164" selection-start-column="4" selection-end-line="188" selection-end-column="34" />
           <folding>
             <element signature="e#78#121#0" expanded="false" />
@@ -646,10 +677,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BasicCurve/collision_check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KDtreeKnn/anothertest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KDtreeKnn/Distance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="74" lean-forward="false" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KDtreeKnn/examples.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="34" column="40" lean-forward="false" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BasicCurve/a_star.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1127">
-          <caret line="206" column="66" lean-forward="false" selection-start-line="206" selection-start-column="12" selection-end-line="206" selection-end-column="66" />
+        <state relative-caret-position="602">
+          <caret line="204" column="25" lean-forward="true" selection-start-line="204" selection-start-column="25" selection-end-line="204" selection-end-column="25" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
             <element signature="e#190#315#0" expanded="false" />
@@ -685,20 +752,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KDtreeKnn/examples.py">
+    <entry file="file://$PROJECT_DIR$/KDtreeKnn/kdtree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KDtreeKnn/anothertest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        <state relative-caret-position="-230">
+          <caret line="122" column="11" lean-forward="true" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#90#127#0" expanded="true" />
+            <element signature="e#525#981#0" expanded="false" />
+            <element signature="e#662#960#0" expanded="false" />
+            <element signature="e#713#919#0" expanded="false" />
+            <element signature="e#730#843#0" expanded="false" />
+            <element signature="e#1851#2047#0" expanded="false" />
+            <element signature="e#1851#1968#1" expanded="false" />
+            <element signature="e#2460#2496#0" expanded="false" />
+            <element signature="e#2900#3119#0" expanded="false" />
+            <element signature="e#3165#3439#0" expanded="false" />
+            <element signature="e#3165#3352#1" expanded="false" />
+            <element signature="e#3400#3439#0" expanded="false" />
+            <element signature="e#3832#3883#0" expanded="false" />
+            <element signature="e#4067#4261#0" expanded="false" />
+            <element signature="e#4112#4196#0" expanded="false" />
+            <element signature="e#4296#4494#0" expanded="false" />
+            <element signature="e#4342#4428#0" expanded="false" />
+            <element signature="e#4558#4771#0" expanded="false" />
+            <element signature="e#4823#4991#0" expanded="false" />
+            <element signature="e#5059#6268#0" expanded="false" />
+            <element signature="e#5059#5385#1" expanded="false" />
+            <element signature="e#6021#6092#0" expanded="false" />
+            <element signature="e#6174#6248#0" expanded="false" />
+            <element signature="e#6328#6869#0" expanded="false" />
+            <element signature="e#6328#6630#1" expanded="false" />
+            <element signature="e#6924#7642#0" expanded="false" />
+            <element signature="e#6924#7121#1" expanded="false" />
+            <element signature="e#7700#8589#0" expanded="false" />
+            <element signature="e#7771#7811#0" expanded="false" />
+            <element signature="e#7821#7861#0" expanded="false" />
+            <element signature="e#8410#8518#0" expanded="false" />
+            <element signature="e#8872#8978#1" expanded="false" />
+            <element signature="e#9147#9484#1" expanded="false" />
+            <element signature="e#9882#9952#0" expanded="false" />
+            <element signature="e#11004#11069#0" expanded="false" />
+            <element signature="e#11376#11440#0" expanded="false" />
+            <element signature="e#11912#11973#0" expanded="false" />
+            <element signature="e#12399#12942#1" expanded="false" />
+            <element signature="e#13939#13967#0" expanded="false" />
+            <element signature="e#14001#14133#0" expanded="false" />
+            <element signature="e#14200#14323#0" expanded="false" />
+            <element signature="e#14357#14372#0" expanded="false" />
+            <element signature="e#14451#14998#1" expanded="false" />
+            <element signature="e#16000#16278#0" expanded="false" />
+            <element signature="e#16327#16789#0" expanded="false" />
+            <element signature="e#16327#16512#1" expanded="false" />
+            <element signature="e#16570#16789#0" expanded="false" />
+            <element signature="e#16863#17554#0" expanded="false" />
+            <element signature="e#17089#17529#0" expanded="false" />
+            <element signature="e#17119#17193#0" expanded="false" />
+            <element signature="e#17421#17483#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -197,14 +197,14 @@ def calc_obstacle_map(ox, oy, reso, vr):
     obmap = np.full((xwidth+1, ywidth+1), False)
     data = []
     for i in zip(ox,oy):
-        data.append({1: i[0], 2: i[1]})
+        data.append({0: i[0], 1: i[1]})
     root = kdtree.create(data, dimensions=2)
     for ix in range(xwidth+1):
         x = ix + minx
         for iy in range(ywidth+1):
             y = iy + miny
             f = ds.EuclideanDistance
-            ans = root.search_knn(point={1: x, 2: y}, k=1, dist=f)
+            ans = root.search_knn(point={0: x, 1: y}, k=1, dist=f)
             onedist = ans[0][1]
             if onedist <= vr/reso:
                 obmap[ix, iy] = True

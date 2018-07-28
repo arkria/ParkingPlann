@@ -39,6 +39,7 @@ for i in zip(ox,oy):
     data.append({1: i[0], 2: i[1]})
     root = kdtree.create(data, dimensions=2)
 
-x, y = 2, 2
+x, y = 3, 2
 f = ds.EuclideanDistance
 ans = root.search_knn(point={1: x, 2: y}, k=1, dist=f)
+print(ans)

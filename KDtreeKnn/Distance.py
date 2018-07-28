@@ -14,7 +14,7 @@ ManhattanDistance = (lambda a, b: sum(
     abs(a.get(axis, 0.) - b.get(axis, 0.)) for axis in range(len(a))))
 # Euclidean distance
 EuclideanDistance = (lambda a, b: math.sqrt(
-    sum(abs(a.get(axis, 0.) - b.get(axis, 0.))**2 for axis in range(1,len(a)+1))))
+    sum(abs(a.get(axis, 0.) - b.get(axis, 0.))**2 for axis in range(len(a)))))
 # Chebyshev distance
 ChebyshevDistance = (lambda a, b: max(
     abs(a.get(axis, 0.) - b.get(axis, 0.)) for axis in range(len(a))))

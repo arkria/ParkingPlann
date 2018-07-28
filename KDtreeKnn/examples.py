@@ -22,7 +22,7 @@ def example_kdtree():
     point = [(2, 3), (5, 4), (9, 6), (4, 7), (8, 1), (7, 2), (8, 8)]
     point1 = []
     for i in point:
-        point1.append({1: i[0], 2: i[1]})
+        point1.append({0: i[0], 1: i[1]})
     print ("point list")
     print (point1)
     # Create a kdtree
@@ -32,7 +32,7 @@ def example_kdtree():
     kdtree.visualize(root)
     # Search for k-nearsest neighbor by given p-Minkowski distance
     f = ds.EuclideanDistance
-    ans = root.search_knn(point={1: 7, 2: 3}, k=4, dist=f)
+    ans = root.search_knn(point={0: 7, 1: 3}, k=4, dist=f)
     print("The 3 nearest nodes to point (7, 3) are:")
     print(ans)
     print("The nearest node to the point is:")
