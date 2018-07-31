@@ -38,6 +38,11 @@ def example_kdtree():
     print("The nearest node to the point is:")
     print(ans[0][0].data)
 
+    ans = root.search_inrange(point={0: 7, 1: 3}, r=4, dist=f)
+    print("the nodes in range are:")
+    print(ans)
+    print("The nearest node to the point is:")
+    print(ans[0][0].data)
 
 def example_knn():
     # An example of how to use knn

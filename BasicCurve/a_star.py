@@ -3,7 +3,7 @@ import KDtreeKnn.kdtree as kdtree, KDtreeKnn.Distance as ds
 import queue
 import numpy as np
 
-VEHICLE_RADIUS = 0.5
+VEHICLE_RADIUS = 1.0
 GRID_RESOLUTION = 1.0
 
 

@@ -1,5 +1,5 @@
-import unittest, reeds_shepp, a_star, math, random, matplotlib.pyplot as plt
-
+import unittest, math, random, matplotlib.pyplot as plt
+from BasicCurve import reeds_shepp, a_star
 # class reeds_sheppTest(unittest.TestCase):
 #
 #     def testSpecial(self):

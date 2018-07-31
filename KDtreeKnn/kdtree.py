@@ -407,6 +407,97 @@ class KDNode:
 
         return sorted(results.items(), key=lambda a: a[1])
 
+
+    def _search_node_inrange(self, point, r, results, examined, get_dist):
+
+        examined.add(self)
+
+        # Get current best
+        if not results:
+            # results is empty
+            bestNode = None
+            bestDist = float('inf')
+        else:
+            # find the nearest (node, distance) tuple
+            bestNode, bestDist = sorted(
+                results.items(), key=lambda n_d: n_d[1], reverse=False)[0]
+
+        nodesChanged = False
+
+        # If the current node is closer than the current best, then it becomes
+        # the current best. And the maximum distance nodes should be removed.
+        nodeDist = get_dist(self)
+        if nodeDist <= r:
+            results[self] = nodeDist
+            nodesChanged = True
+
+        # Get new best only if nodes have changed
+        if nodesChanged:
+            bestNode, bestDist = sorted(
+                results.items(), key=lambda n: n[1], reverse=False)[0]
+
+        # Check whether there could be any other points on the other side
+        # of the splitting.
+        # hyperplane that are closer to the search point than the current best.
+        for child, pos in self.children():
+            if child in examined:
+                continue
+
+            examined.add(child)
+            compare, combine = COMPARE_CHILD[pos]
+
+            # Since the hyperplanes are all axis-aligned this is implemented
+            # as a simple comparison to see whether the difference between the
+            # splitting coordinate of the search point and current node is less
+            # than the distance (overall coordinates) from the search point to
+            # the current best.
+            nodePoint = self.data.get(self.axis, 0.)
+            pointPlusDist = combine(point.get(self.axis, 0.), bestDist)
+            lineIntersects = compare(pointPlusDist, nodePoint)
+
+            # If the hypersphere crosses the plane, there could be nearer
+            # points on the other side of the plane, so the algorithm must move
+            # down the other branch of the tree from the current node looking
+            # for closer points, following the same recursive process as the
+            # entire search.
+            if lineIntersects:
+                child._search_node_inrange(point, r, results, examined, get_dist)
+
+    def search_inrange(self, point, r, dist=None):
+        prev = None
+        current = self
+
+        if dist is None:
+            get_dist = lambda n: n.dist(point)
+        else:
+            get_dist = lambda n: dist(n.data, point)
+
+        # go down the trees as we would for inserting
+        while current:
+            if (point.get(current.axis, 0.) <
+                    current.data.get(current.axis, 0.)):
+                # go to left subtree
+                prev = current
+                current = current.left
+            else:
+                # go to right subtree
+                prev = current
+                current = current.right
+
+        if not prev:
+            return []
+
+        examined = set()
+        results = {}
+
+        # Go uo the tree, looking for better solutions
+        current = prev
+        while current:
+            current._search_node_inrange(point, r, results, examined, get_dist)
+            current = current.parent
+
+        return sorted(results.items(), key=lambda a: a[1])
+
     def __nonzero__(self):
         return self.data is not None
 
