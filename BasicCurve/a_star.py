@@ -186,13 +186,13 @@ def get_motion_model():
 
 def calc_obstacle_map(ox, oy, reso, vr):
 
-    minx = round(min(ox))
-    miny = round(min(oy))
-    maxx = round(max(ox))
-    maxy = round(max(oy))
+    minx = int(round(min(ox)))
+    miny = int(round(min(oy)))
+    maxx = int(round(max(ox)))
+    maxy = int(round(max(oy)))
 
-    xwidth = round(maxx - minx)
-    ywidth = round(maxy - miny)
+    xwidth = int(round(maxx - minx))
+    ywidth = int(round(maxy - miny))
 
     obmap = np.full((xwidth+1, ywidth+1), False)
     data = []

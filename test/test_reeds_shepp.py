@@ -161,59 +161,59 @@ class a_starTest(unittest.TestCase):
 if __name__ == '__main__':
     print('Start Test')
     # unittest.main()
-    sx, sy, gx, gy = 2.0, 2.0, 8.0, 8.0
-    ox, oy = [], []
-
-    for i in range(11):
-        ox.append(float(i))
-        oy.append(0.0)
-
-    for i in range(11):
-        ox.append(10.0)
-        oy.append(float(i))
-
-    for i in range(11):
-        ox.append(float(i))
-        oy.append(10.0)
-
-    for i in range(11):
-        ox.append(0.0)
-        oy.append(float(i))
-
-    for i in range(8):
-        ox.append(4.0)
-        oy.append(float(i))
-
-    for i in range(5):
-        ox.append(6.0)
-        oy.append(10.0 - float(i))
-
-    # sx, sy, gx, gy = 10.0, 10.0, 50.0, 50.0
+    # sx, sy, gx, gy = 2.0, 2.0, 8.0, 8.0
     # ox, oy = [], []
     #
-    # for i in range(61):
+    # for i in range(11):
     #     ox.append(float(i))
     #     oy.append(0.0)
     #
-    # for i in range(61):
-    #     ox.append(60.0)
+    # for i in range(11):
+    #     ox.append(10.0)
     #     oy.append(float(i))
     #
-    # for i in range(61):
+    # for i in range(11):
     #     ox.append(float(i))
-    #     oy.append(60.0)
+    #     oy.append(10.0)
     #
-    # for i in range(61):
+    # for i in range(11):
     #     ox.append(0.0)
     #     oy.append(float(i))
     #
-    # for i in range(41):
-    #     ox.append(20.0)
+    # for i in range(8):
+    #     ox.append(4.0)
     #     oy.append(float(i))
     #
-    # for i in range(41):
-    #     ox.append(40.0)
-    #     oy.append(60.0 - float(i))
+    # for i in range(5):
+    #     ox.append(6.0)
+    #     oy.append(10.0 - float(i))
+
+    sx, sy, gx, gy = 10.0, 10.0, 50.0, 50.0
+    ox, oy = [], []
+
+    for i in range(61):
+        ox.append(float(i))
+        oy.append(0.0)
+
+    for i in range(61):
+        ox.append(60.0)
+        oy.append(float(i))
+
+    for i in range(61):
+        ox.append(float(i))
+        oy.append(60.0)
+
+    for i in range(61):
+        ox.append(0.0)
+        oy.append(float(i))
+
+    for i in range(41):
+        ox.append(20.0)
+        oy.append(float(i))
+
+    for i in range(41):
+        ox.append(40.0)
+        oy.append(60.0 - float(i))
 
     rx, ry = a_star.calc_astar_path(sx, sy, gx, gy, ox, oy, a_star.GRID_RESOLUTION, a_star.VEHICLE_RADIUS)
     pmap = a_star.calc_dist_policy(gx, gy, ox, oy, a_star.GRID_RESOLUTION, a_star.VEHICLE_RADIUS)

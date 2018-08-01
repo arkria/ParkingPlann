@@ -77,16 +77,16 @@ def calc_hybrid_astar_path(sx, sy, syaw, gx, gy, gyaw, ox, oy, xyreso, yawreso, 
         data.append({0: i[0], 1: i[1]})
     root = kdtree.create(data, dimensions=2)
 
-    # obmap, gkdtree = calc_obstacle_map(ox, oy, c)
-    obmap = loaddata('obmap.pkl')
-    gkdtree = loaddata('gkdtree.pkl')
+    obmap, gkdtree = calc_obstacle_map(ox, oy, c)
+    # obmap = loaddata('obmap.pkl')
+    # gkdtree = loaddata('gkdtree.pkl')
 
     nstart = Node(round(sx/xyreso), round(sy/xyreso), round(syaw/yawreso), True, [sx], [sy], [syaw], 0.0, 0.0, -1)
     ngoal = Node(round(gx/xyreso), round(gy/xyreso), round(gyaw/yawreso), True, [gx], [gy], [gyaw], 0.0, 0.0, -1)
 
     if USE_HOLONOMIC_WITH_OBSTACLE_HEURISTIC:
-        # h_dp = calc_holonomic_with_obstacle_heuristic(ngoal, ox, oy, xyreso)
-        h_dp = loaddata('h_dp.pkl')
+        h_dp = calc_holonomic_with_obstacle_heuristic(ngoal, ox, oy, xyreso)
+        # h_dp = loaddata('h_dp.pkl')
     else:
         h_dp = []
 
@@ -297,6 +297,10 @@ def calc_next_node(current, c_id, u, d, c, gkdtree):
 def calc_holonomic_with_obstacle_heuristic(gnode, ox, oy, xyreso):
     # println("Calc distance policy")
     h_dp = a_star.calc_dist_policy(gnode.x[-1], gnode.y[-1], ox, oy, xyreso, VEHICLE_RADIUS)
+    out = open('h_dp.pkl', 'wb')
+    # Pickle the knn_model using the highest protocol available.
+    dump(h_dp, out, -1)
+    out.close()
     return h_dp
 
 
@@ -320,23 +324,23 @@ def calc_nonholonomic_without_obstacle_heuristic(ngoal, c):
 
 
 def calc_config(ox, oy, xyreso, yawreso, obreso):
-    minx = round(min(ox)/xyreso)
-    miny = round(min(oy)/xyreso)
-    maxx = round(max(ox)/xyreso)
-    maxy = round(max(oy)/xyreso)
-    obminx = round(min(ox)/obreso)
-    obminy = round(min(oy)/obreso)
-    obmaxx = round(max(ox)/obreso)
-    obmaxy = round(max(oy)/obreso)
+    minx = int(round(min(ox)/xyreso))
+    miny = int(round(min(oy)/xyreso))
+    maxx = int(round(max(ox)/xyreso))
+    maxy = int(round(max(oy)/xyreso))
+    obminx = int(round(min(ox)/obreso))
+    obminy = int(round(min(oy)/obreso))
+    obmaxx = int(round(max(ox)/obreso))
+    obmaxy = int(round(max(oy)/obreso))
 
-    xw = round((maxx - minx))
-    yw = round((maxy - miny))
-    obxw = round((obmaxx - obminx))
-    obyw = round((obmaxy - obminy))
+    xw = int(round((maxx - minx)))
+    yw = int(round((maxy - miny)))
+    obxw = int(round((obmaxx - obminx)))
+    obyw = int(round((obmaxy - obminy)))
 
-    minyaw = round(- pi/yawreso) - 1
-    maxyaw = round( pi/yawreso)
-    yaww = round((maxyaw - minyaw))
+    minyaw = int(round(- pi/yawreso) - 1)
+    maxyaw = int(round( pi/yawreso))
+    yaww = int(round((maxyaw - minyaw)))
 
     config = Config(minx, miny, minyaw, maxx, maxy, maxyaw, xw, yw, yaww,
                     xyreso, yawreso, obminx, obminy, obmaxx, obmaxy, obxw, obyw, obreso)
@@ -355,16 +359,13 @@ def calc_obstacle_map(ox, oy, c):
     for i in zip(ox, oy):
         data.append({0: i[0], 1: i[1]})
     root = kdtree.create(data, dimensions=2)
-    out1 = open('gkdtree.pkl', 'wb')
-    # Pickle the knn_model using the highest protocol available.
-    dump(root, out1, -1)
-    out1.close()
+
     for ix in range(c.obxw+1):
         x = ix + c.obminx
         for iy in range(c.obyw+1):
 
             y = iy + c.obminy
-            print(x,y)
+            # print(x,y)
             f = ds.EuclideanDistance
             ans = root.search_knn(point={0: x, 1: y}, k=1, dist=f)
             onedist = ans[0][1]
@@ -375,6 +376,12 @@ def calc_obstacle_map(ox, oy, c):
     # Pickle the knn_model using the highest protocol available.
     dump(obmap, out, -1)
     out.close()
+
+    out1 = open('gkdtree.pkl', 'wb')
+    # Pickle the knn_model using the highest protocol available.
+    dump(root, out1, -1)
+    out1.close()
+
     return obmap, root
 
 
