@@ -8,6 +8,6 @@ I think the basic theory of the algorithm is simple for every one. What I want t
 The algorithm is not efficient and the construction of the obstacle map both with the policy map consume most of the time. For the convience of debug, I saved this data as .pkl file.
 
 The following is the animination
-![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/
-u=702257389,1274025419&fm=27&gp=0.jpg "区块链")
+
+![backwards parking](https://github.com/arkria/ParkingPlann/blob/master/figure/backwards.gif)
 
