@@ -143,15 +143,15 @@ rx, ry, ryaw = hybrid_a_star.calc_hybrid_astar_path(x0[0], x0[1], x0[2], xF[0], 
 xp = np.mat([rx, ry, ryaw])
 xp = xp.T
 
-hybrid_a_star.savedata(xp, 'xp.pkl')
-plt.plot(ox, oy, '.k', label = 'obstacles')
-if rx != None:
-    plt.plot(rx, ry, '-r', label = "Hybrid A* path")
-
-plt.legend()
-plt.grid(True)
-plt.axis('equal')
-plt.show()
+# hybrid_a_star.savedata(xp, 'xp.pkl')
+# plt.plot(ox, oy, '.k', label = 'obstacles')
+# if rx != None:
+#     plt.plot(rx, ry, '-r', label = "Hybrid A* path")
+#
+# plt.legend()
+# plt.grid(True)
+# plt.axis('equal')
+# plt.show()
 
 # xp = hybrid_a_star.loaddata('xp.pkl')
 N = xp.shape[0]
