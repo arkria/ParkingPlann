@@ -1,6 +1,8 @@
 from math import pi
 import numpy as np
-from plotTraj import plotTraj
+# from plotTraj import plotTraj
+from plotAnimation import AnimiTraj
+from matplotlib import  animation
 
 from BasicCurve import hybrid_a_star
 import matplotlib.pyplot as plt
@@ -135,23 +137,25 @@ elif scenario == 'parallel':
 XYbounds = [-15, 15, 1, 10]
 x0 = [-6, 9.5, 0.0, 0.0]
 
-#  rx, ry, ryaw = hybrid_a_star.calc_hybrid_astar_path(x0[0], x0[1], x0[2], xF[0], xF[1], xF[2], ox, oy,
-#                                                     hybrid_a_star.XY_GRID_RESOLUTION,
-#                                                     hybrid_a_star.YAW_GRID_RESOLUTION, hybrid_a_star.OB_MAP_RESOLUTION)
-# xp = np.mat([rx, ry, ryaw])
-# xp = xp.T
-#
-# hybrid_a_star.savedata(xp, 'xp.pkl')
-# plt.plot(ox, oy, '.k', label = 'obstacles')
-# if rx != None:
-#     plt.plot(rx, ry, '-r', label = "Hybrid A* path")
-#
-# plt.legend()
-# plt.grid(True)
-# plt.axis('equal')
-# plt.show()
+rx, ry, ryaw = hybrid_a_star.calc_hybrid_astar_path(x0[0], x0[1], x0[2], xF[0], xF[1], xF[2], ox, oy,
+                                                hybrid_a_star.XY_GRID_RESOLUTION,
+                                                hybrid_a_star.YAW_GRID_RESOLUTION, hybrid_a_star.OB_MAP_RESOLUTION)
+xp = np.mat([rx, ry, ryaw])
+xp = xp.T
 
-xp = hybrid_a_star.loaddata('xp.pkl')
+hybrid_a_star.savedata(xp, 'xp.pkl')
+plt.plot(ox, oy, '.k', label = 'obstacles')
+if rx != None:
+    plt.plot(rx, ry, '-r', label = "Hybrid A* path")
+
+plt.legend()
+plt.grid(True)
+plt.axis('equal')
+plt.show()
+
+# xp = hybrid_a_star.loaddata('xp.pkl')
 N = xp.shape[0]
 
-plotTraj(xp, N, ego,L,nObPlot,vObPlot,lObPlot,"Signed Distance Approach (Min. Penetration)",1)
+# plotTraj(xp, N, ego,L,nObPlot,vObPlot,lObPlot,"Signed Distance Approach (Min. Penetration)",1)
+AnimiTraj(xp, N, ego,L,nObPlot,vObPlot,lObPlot,"Parallel Parking",1)
+

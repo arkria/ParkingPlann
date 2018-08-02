@@ -1,62 +1,57 @@
-import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.animation as animation
+from matplotlib import animation
+from numpy import random 
 
-# Fixing random state for reproducibility
-np.random.seed(19680801)
+fig = plt.figure()
+ax1 = plt.axes(xlim=(-108, -104), ylim=(31,34))
+line, = ax1.plot([], [], lw=2)
+plt.xlabel('Longitude')
+plt.ylabel('Latitude')
 
-
-# Create new Figure with black background
-fig = plt.figure(figsize=(8, 8), facecolor='black')
-
-# Add a subplot with no frame
-ax = plt.subplot(111, frameon=False)
-
-# Generate random data
-data = np.random.uniform(0, 1, (64, 75))
-X = np.linspace(-1, 1, data.shape[-1])
-G = 1.5 * np.exp(-4 * X ** 2)
-
-# Generate line plots
+plotlays, plotcols = [2], ["black","red"]
 lines = []
-for i in range(len(data)):
-    # Small reduction of the X extents to get a cheap perspective effect
-    xscale = 1 - i / 200.
-    # Same for linewidth (thicker strokes on bottom)
-    lw = 1.5 - i / 100.0
-    line, = ax.plot(xscale * X, i + G * data[i], color="w", lw=lw)
-    lines.append(line)
-
-# Set y limit (or first line is cropped because of thickness)
-ax.set_ylim(-1, 70)
-
-# No ticks
-ax.set_xticks([])
-ax.set_yticks([])
-
-# 2 part titles to get different font weights
-ax.text(0.5, 1.0, "MATPLOTLIB ", transform=ax.transAxes,
-        ha="right", va="bottom", color="w",
-        family="sans-serif", fontweight="light", fontsize=16)
-ax.text(0.5, 1.0, "UNCHAINED", transform=ax.transAxes,
-        ha="left", va="bottom", color="w",
-        family="sans-serif", fontweight="bold", fontsize=16)
+for index in range(2):
+    lobj = ax1.plot([],[],lw=2,color=plotcols[index])[0]
+    lines.append(lobj)
 
 
-def update(*args):
-    # Shift all data to the right
-    data[:, 1:] = data[:, :-1]
-
-    # Fill-in new values
-    data[:, 0] = np.random.uniform(0, 1, len(data))
-
-    # Update data
-    for i in range(len(data)):
-        lines[i].set_ydata(i + G * data[i])
-
-    # Return modified artists
+def init():
+    for line in lines:
+        line.set_data([],[])
     return lines
 
-# Construct the animation, using the update function as the animation director.
-anim = animation.FuncAnimation(fig, update, interval=10)
+x1,y1 = [],[]
+x2,y2 = [],[]
+
+# fake data
+frame_num = 100
+gps_data = [-104 - (4 * random.rand(2, frame_num)), 31 + (3 * random.rand(2, frame_num))]
+
+
+def animate(i):
+
+    x = gps_data[0][0, i]
+    y = gps_data[1][0, i]
+    x1.append(x)
+    y1.append(y)
+
+    x = gps_data[0][1,i]
+    y = gps_data[1][1,i]
+    x2.append(x)
+    y2.append(y)
+
+    xlist = [x1, x2]
+    ylist = [y1, y2]
+
+    #for index in range(0,1):
+    for lnum,line in enumerate(lines):
+        line.set_data(xlist[lnum], ylist[lnum]) # set data for each line separately. 
+
+    return lines
+
+# call the animator.  blit=True means only re-draw the parts that have changed.
+anim = animation.FuncAnimation(fig, animate, init_func=init,
+                               frames=frame_num, interval=10, blit=True)
+
+
 plt.show()

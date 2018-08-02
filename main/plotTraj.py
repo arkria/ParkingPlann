@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import time
 from matplotlib import animation
 
+plt.ion()
 def plotTraj(xp, N, ego, L, nOb, vOb, lOb, disp_title, plotNumb):
 
     W_ev = ego[1] + ego[3]
@@ -27,10 +28,12 @@ def plotTraj(xp, N, ego, L, nOb, vOb, lOb, disp_title, plotNumb):
 
     centerCarF = xF + RotF * np.mat([[offset],[0]])
 
+    print(xp[:5, :])
 
-    for i in range(N):
+    for i in range(N-1):
         plt.figure(plotNumb)
         plt.plot(xp[:i, 0], xp[:i, 1], 'b')
+
         plt.title(disp_title)
         # plt.hold(True)
 
@@ -73,12 +76,12 @@ def plotTraj(xp, N, ego, L, nOb, vOb, lOb, disp_title, plotNumb):
 
 
 
-        plt.draw()
+        # plt.draw()
 
-        time.sleep(0.05)
+        plt.pause(0.05)
 
         plt.cla()
-        plt.close()
+        # plt.close()
 
 
 
