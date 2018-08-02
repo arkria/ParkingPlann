@@ -11,3 +11,5 @@ The following is the animination
 
 ![backwards parking](https://github.com/arkria/ParkingPlann/blob/master/figure/backwards.gif)
 
+![parallel parking](https://github.com/arkria/ParkingPlann/blob/master/figure/parallel.gif)
+
