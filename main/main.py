@@ -7,7 +7,7 @@ from matplotlib import  animation
 from BasicCurve import hybrid_a_star
 import matplotlib.pyplot as plt
 
-scenario = 'parallel'
+scenario = 'backwards'
 
 fixTime = 0
 

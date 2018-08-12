@@ -104,7 +104,7 @@ def AnimiTraj(xp, N, ego, L, nOb, vOb, lOb, disp_title, plotNumb):
 
     # print(xp[:5, :])
     anim = animation.FuncAnimation(fig, update,  frames= range(N-1), init_func=init, interval = 50, repeat= False, blit = True)
-    anim.save('parallel.gif', writer='imagemagick')
+    anim.save('backwards.gif', writer='imagemagick')
     plt.show()
 
 

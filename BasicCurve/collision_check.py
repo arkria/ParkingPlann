@@ -6,7 +6,7 @@ B = 1.0 #[m] distance from rear to vehicle back end
 C = 3.7 #[m] distance from rear to vehicle front end
 I = 2.0 #[m] width of vehicle
 WBUBBLE_DIST = (B+C)/2.0-B #[m] distance from rear and the center of whole bubble
-WBUBBLE_R = (B+C)/2.0 #[m] whole bubble radius
+WBUBBLE_R = hypot(B+C, I)/2.0 #[m] whole bubble radius
 
 vrx = [C, C, -B, -B, C ]
 vry = [-I/2.0, I/2.0, I/2.0, -I/2.0, -I/2.0]
