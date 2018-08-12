@@ -157,5 +157,5 @@ xp = xp.T
 N = xp.shape[0]
 
 # plotTraj(xp, N, ego,L,nObPlot,vObPlot,lObPlot,"Signed Distance Approach (Min. Penetration)",1)
-AnimiTraj(xp, N, ego,L,nObPlot,vObPlot,lObPlot,"Parallel Parking",1)
+AnimiTraj(xp, N, ego,L,nObPlot,vObPlot,lObPlot,"Backwards Parking",1)
 
