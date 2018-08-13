@@ -44,7 +44,7 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
+            <state relative-caret-position="672">
               <caret line="159" column="57" lean-forward="false" selection-start-line="159" selection-start-column="57" selection-end-line="159" selection-end-column="57" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -56,7 +56,7 @@
       <file leaf-file-name="hybrid_a_star.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BasicCurve/hybrid_a_star.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5361">
+            <state relative-caret-position="1104">
               <caret line="58" column="4" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
               <folding />
             </state>
@@ -66,7 +66,7 @@
       <file leaf-file-name="collision_check.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BasicCurve/collision_check.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-92">
+            <state relative-caret-position="161">
               <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
@@ -78,7 +78,7 @@
       <file leaf-file-name="plotAnimation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/plotAnimation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="724">
+            <state relative-caret-position="2369">
               <caret line="106" column="24" lean-forward="false" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
               <folding />
             </state>
@@ -203,6 +203,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,7 +236,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -441,7 +441,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22633298" sideWeight="0.4904051" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2328618" sideWeight="0.48687088" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19296375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19509594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48358864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -654,9 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="989">
           <caret line="44" column="18" lean-forward="false" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#55#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -664,9 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1748">
           <caret line="77" column="19" lean-forward="false" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#55#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -674,7 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5566">
           <caret line="242" column="31" lean-forward="false" selection-start-line="242" selection-start-column="31" selection-end-line="242" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -682,13 +675,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5543">
           <caret line="244" column="24" lean-forward="false" selection-start-line="244" selection-start-column="24" selection-end-line="244" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BasicCurve/collision_check.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
+        <state relative-caret-position="161">
           <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
@@ -698,7 +690,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BasicCurve/hybrid_a_star.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5361">
+        <state relative-caret-position="1104">
           <caret line="58" column="4" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
           <folding />
         </state>
@@ -706,7 +698,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/plotAnimation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
+        <state relative-caret-position="2369">
           <caret line="106" column="24" lean-forward="false" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
           <folding />
         </state>
@@ -714,7 +706,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
+        <state relative-caret-position="672">
           <caret line="159" column="57" lean-forward="false" selection-start-line="159" selection-start-column="57" selection-end-line="159" selection-end-column="57" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
